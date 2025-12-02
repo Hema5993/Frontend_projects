@@ -1,0 +1,521 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("style/aum3.jpg");
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+
+}
+h1 {
+  background-color: orangered;
+  color: black;
+  padding: 15px 230px 40px 0px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0px;
+  background: linear-gradient(to right, rgb(242, 181, 159), rgb(231, 81, 27), rgb(244, 81, 21));
+
+}
+.outer-container {
+    width: 1200px;        /* FIXED SIZE – adjust if you want */
+    margin: 0 auto 150px auto; 
+    background-color: transparent;
+    margin-top: 0px;
+}
+
+.content-box {
+  border-right: 2px solid rgb(9, 8, 8);
+  border-top: 2px solid rgb(9, 8, 8);
+  position: relative;
+  margin-top:0px;
+  padding:0px;
+  flex: 1;
+
+}
+
+.aum-logo {
+  background-color: white;
+  padding: 0px ;
+  margin: 0;
+
+}
+
+.aum-logo img {
+  height: 120px;
+  width: 100px;
+  padding: 20px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+section {
+  border: 1px solid black;
+  border-left: 2px solid rgb(9, 8, 8);
+  border-right: 2px solid rgb(9, 8, 8);
+  position: relative;
+  margin-top: 0px;
+  padding: 0px;
+
+}
+/* NAV BAR */
+.main-navigation {
+  background-color: black;
+}
+
+/* UL inside nav */
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* LI items */
+.main-navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.main-navigation a {
+  display: block;
+  padding: 20px 60px;       /* controls size of buttons */
+  color: white;
+  text-decoration: none;
+  font-size: 22px;          /* change font size here */
+}
+
+/* Active page (e.g., Home on this page) */
+.main-navigation a.active {
+  color:orangered;           /* orange text, black background */
+}
+
+/* Hover effect */
+.main-navigation a:hover:not(.active) {
+  background-color:#858585;
+    color: white;
+}
+
+
+.columns {
+  display: flex;
+  background-color: rgb(218, 216, 216);
+  padding: 0px 0px 0px 0px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.column {
+  width: 50%;
+  padding: 15px;              
+}
+
+
+.columns::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  bottom: 80px;
+  left: 50%;
+  width: 0;
+  border-left: 2px solid rgb(241, 180, 67);
+  transform: translateX(-2px); 
+}
+
+.column {
+  width: calc(50% - 1px);   /* <-- makes left and right columns exactly symmetric */
+  padding: 15px;            /* keep your padding */
+  box-sizing: border-box;
+}
+
+/* ensure the row borders stretch the full width of their column */
+.row {
+  padding: 10px 0;                       /* keeps spacing */
+  border-top: 1px solid #bcbcbc;
+  width: 100%;                           /* force full column width */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-top: 12px;
+}
+
+/* last row uses a bottom border if you want */
+.row:last-child {
+  border-bottom: 1px solid #bcbcbc;
+  margin-bottom: 60px;
+}
+.row-title h3 {
+    margin: 0;              /* Removes large space above */
+    padding: 5px 0;         /* Controls spacing inside */
+    font-size: 24px;
+}
+.row-table {
+  background-color: grey;
+  padding-top: 100px;
+}
+.sub-row {
+  background-color: #bfbfbf;
+}
+.row-second{
+  margin-bottom: 5px;
+  margin-top: 10px;
+  
+}
+.row-third{
+  margin-bottom: 28px;
+  margin-top: 2px;
+  padding-bottom: -200px;
+}
+.row-third-line{
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size:22px;
+  margin-bottom: -8px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 19px;
+}
+
+ul {
+  margin-left: 5px;
+  font-size: 14px;
+  padding-left: 8px;
+  list-style-position: inside;   /* keeps dot outside the text */
+
+}
+
+li {
+  margin-bottom: 23px;
+   font-size: 18px;
+}
+
+li.spaced::first-letter {
+    margin-left: 0.8em; /* adjust space as needed */
+}
+
+.row-table {
+  background-color: transparent;
+  padding: 0;
+  margin-top: 10px;
+  
+}
+.row-line {
+    border-bottom: 2px solid #bcbcbc;
+    margin-top: 10px;  /* bigger gap */
+    padding-top: 15px;            /* pushes content down */
+}
+
+.row-line h3{
+  border-top: 2px solid #bcbcbc;
+  margin-bottom: -10px;
+  padding:0px;
+  padding-top: 20px;
+}
+
+.stats-title {
+  background-color: #858585;
+  margin: 0;
+  padding: 6px 8px;
+  font-size: 18px;
+  border: 1px solid black;
+  border-bottom: none; 
+  text-align: center;
+
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.stats-table th,
+.stats-table td {
+  border: 1px solid black;
+  padding:15px 10px;
+  width: 10px;
+  height: 0px;
+  text-align: center;
+}
+
+.stats-table th {
+  background-color: #858585;
+  text-align:center;
+  font-size: 16px;
+  width: 2px;
+  padding: 5px;
+
+}
+
+.stats-table td {
+  background-color:#b8b6b6;
+  text-align: center;
+  width:1px;
+  font-size: 16px;
+  width: 2px;
+  padding: 10px;
+}
+
+.ta-section {
+  background-color: #d5d5d5;
+  padding: 40px 0px;
+}
+
+.ta-box {
+  width: 40%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #e6e6e6;
+  border: 2px solid rgb(235, 154, 125);
+  border-top: 2px solid #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
+  margin-top: -10px;
+}
+
+.ta-box h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 27px;
+  margin-top: 4px;
+
+}
+
+.ta-box h3 {
+  margin-bottom: 10px;
+}
+
+.ta-box label {
+  display: inline-block;
+  width: 90px;
+  font-size: 16px;
+}
+
+.ta-box input[type="text"] {
+  width: 190px;
+  padding: 4px;
+}
+
+.ta-box textarea {
+    width: 250px;
+    height: 100px;
+    border: 1px solid #999;
+    padding: 4px;
+    resize: none; /* optional */
+}
+
+
+.ta-buttons {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: -180px;
+}
+
+.ta-buttons input[type="submit"],
+.ta-buttons input[type="reset"] {
+  
+    padding: 13px 25px;
+    font-size: 16px;
+    margin: 0 25px;   /* THIS CREATES THE BIGGER GAP */
+    cursor: pointer;
+}
+.thank-text {
+    font-weight: bold;
+    text-align: left;
+    margin-left: -1px;   /* ensures left alignment */
+    font-size: 19px;
+    margin-bottom: 20px;
+    width: 80%;
+
+
+}
+
+.comments-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.comments-row label {
+    width: 90px; /* same as other labels */
+    font-size: 16px;
+}
+.ta-box .comments-box {
+    width: 200px;
+    height: 100px ;
+    resize: none;
+    border: 1px solid #999;
+}
+
+
+.gpa-section {
+  background-color: #d5d5d5;
+  padding: 40px 0;
+}
+
+.gpa-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 100px 30px 70px; 
+/* top | right | bottom | left */
+  background-color: #e6e6e6;
+  border: 2px solid rgb(244, 161, 130);
+  border-top: 2px solid #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: 35px;
+}
+.gpa-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3px;
+    margin-top: -40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.gpa-info {
+    text-align: left;     /* moves text to left */
+    margin-left: -20px;       /* removes centering */
+    max-width: 100%;      
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: nowrap;  
+    margin-bottom: 10px;
+}
+.gpa-header-row {
+    display: grid;
+    grid-template-columns: 250px 160px 160px;
+    justify-content: start;
+    align-items: center;
+    column-gap: 40px;
+    margin-bottom: 5px;      /* small gap under headers */
+}
+
+.gpa-row {
+    display: grid;
+    grid-template-columns: 200px 160px 160px;
+    justify-content: start;
+    align-items: center;
+    column-gap: 40px;
+    margin-bottom: 40px;     /* small gap between rows */
+}
+
+.gpa-header-row span:first-child {
+  text-align: left;
+}
+
+.gpa-row:last-child {
+  margin-bottom: 0;
+}
+
+.gpa-label {
+  text-align: left;
+  font-size: 18px;   /* INCREASED SIZE */
+  font-weight: 500px;  /* optional - makes it bold */
+  padding-left: 2px;
+  margin-left: 78px;
+
+}
+
+.gpa-col-title {
+    font-size: 22px;     /* SAME SIZE as Find your GPA */
+    font-weight: bold;   /* bold */
+    margin-left: 10px;
+    text-align: center;
+}
+
+/*.gpa-label {
+  text-align: right;
+  padding-right: 8px;
+  font-size: 14px;
+}*/
+
+
+#avgGpa {
+  background-color: #bfbfbf;
+}
+
+.gpa-buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.gpa-buttons input[type="button"] {
+  padding: 20px 20px;
+  margin: 0 8px;
+}
+.gpa-row input[type="text"] {
+    width: 100px;
+    height: 24px;
+    border: 1px solid #333;
+    padding: 2px 4px;
+    box-sizing: border-box;
+    margin-left: 80px;   /* ✅ moved slightly right */
+}
+
+.gpa-buttons-row {
+    margin-top: -20px; /* move buttons slightly up */
+    margin-left: 80px;
+
+}
+.gpa-buttons-row input[type="button"] {
+    padding: 8px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 120px;   /* smaller width */
+    height: 48px;
+    margin-top: 10px;
+}
+.footer {
+  background-color: #e7602b; 
+  padding: 0px 10px;
+  border-left: 2px solid rgb(9, 8, 8);
+  border-right: 2px solid rgb(9, 8, 8);
+  border-top: 1px solid rgb(9, 8, 8);
+  border-bottom: 2px solid black;
+  position: relative;
+  padding-top: 8px;   
+}
+.footer-center {
+    position: absolute;
+    top: 5px;               
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 10px;
+}
+
+.footer-right {
+    position: absolute;
+    top: 5px;          
+    right: 20px;
+}
+
+.footer-right img {
+    width: 40px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.footer-left{
+ margin-top: 10px;
+}
+.footer-left p {
+    margin: 5px 15px;
+    font-size: 16px;
+}
+.header_part {
+    display: flex;
+}
